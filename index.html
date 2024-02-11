@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Студенты</title>
+  </head>
+  <body>
+    <div class="root">
+      <form data-form class="form">
+        <input data-form-name class="form__input" placeholder="ФИО" type="text">
+        <input data-form-date class="form__input" placeholder="Дата рождения" type="text">
+        <input data-form-group class="form__input" placeholder="Група" type="text">
+        <button class="form__button" type="submit">Отправить</button>
+      </form>
+      <table class="table">
+        <thead class="table__head">
+          <tr class="table__row">
+            <th class="table__cell table__cell_head">Имя</th>
+            <th class="table__cell table__cell_head">Дата рождения</th>
+            <th class="table__cell table__cell_head">Группа</th>
+            <th class="table__cell table__cell_head"></th>
+          </tr>
+        </thead>
+        <tbody data-table class="table__body">
+        </tbody>
+      </table>
+    </div>
+    <template data-row-template>
+      <tr data-row class="table__row">
+        <td data-cell-name class="table__cell"></td>
+        <td data-cell-date class="table__cell"></td>
+        <td data-cell-group class="table__cell"></td>
+        <td class="table__cell">
+          <button data-cell-delete class="table__delete-button" type="button">Удалить</button>
+        </td>
+      </tr>
+    </template>
+  </body>
+</html>

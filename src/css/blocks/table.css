@@ -1,0 +1,28 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-left: none;
+}
+
+.table__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.table__cell {
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  padding: 5px;
+}
+
+.table__cell_head {
+  border-top: none;
+}
+
+.table__delete-button {
+  background: transparent;
+  border-radius: 3px;
+  border: 1px solid #8cd8ea;
+  cursor: pointer;
+}

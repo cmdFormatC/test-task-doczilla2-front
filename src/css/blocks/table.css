@@ -7,7 +7,7 @@
 
 .table__row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .table__cell {
@@ -18,4 +18,11 @@
 
 .table__cell_head {
   border-top: none;
+}
+
+.table__delete-button {
+  background: transparent;
+  border-radius: 3px;
+  border: 1px solid #8cd8ea;
+  cursor: pointer;
 }

@@ -1,0 +1,34 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  height: 300px;
+  padding: 15px;
+  border: 1px solid #8cd8ea;
+  border-radius: 10px;
+}
+
+.form__input {
+  color: black;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #8cd8ea;
+  padding: 0 5px;
+}
+
+.form__input::placeholder {
+  color: black;
+
+}
+
+.form__input:focus-visible {
+  outline: none;
+}
+
+.form__button {
+  background: transparent;
+  border-radius: 3px;
+  border: 1px solid #8cd8ea;
+  cursor: pointer;
+}
